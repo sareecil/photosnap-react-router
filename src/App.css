@@ -199,6 +199,7 @@ hr {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .mb50 img{
@@ -233,7 +234,7 @@ hr {
 .tittle-up {
   display: flex;
   gap: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .colorwht {
@@ -257,5 +258,9 @@ hr {
 
 .links a:hover {
   color: #b6b6b6;
+}
+
+.links li {
+  padding-bottom: 10px;
 }
 
