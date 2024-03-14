@@ -15,7 +15,7 @@ body {
   font-optical-sizing: auto;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  width: 1440px;
+  /* width: 1440px; */
   margin: 0 auto;
 }
 
@@ -63,6 +63,11 @@ body {
 
 .h-btn a:hover {
   color:#000000;
+}
+
+.content {
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .part-one {
@@ -197,7 +202,7 @@ hr {
 
 .footer-top {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
   margin-bottom: 70px;
 }
@@ -224,7 +229,7 @@ hr {
 
 .footer-down {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #000000;
   height: 250px;
   padding-block: 90px;
