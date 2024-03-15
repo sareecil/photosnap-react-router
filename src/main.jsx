@@ -6,12 +6,24 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Root from './routes/Root.jsx';
+import Stories from './routes/Stories.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <Root/>,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/stories",
+        element: <Stories/>
+      }
+    ]
   },
   
 ]);

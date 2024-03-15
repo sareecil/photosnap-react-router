@@ -10,13 +10,17 @@ a{
   text-decoration: none;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   /* width: 1440px; */
-  margin: 0 auto;
 }
 
 .header {
@@ -198,6 +202,11 @@ hr {
 
 .linkhover:hover {
   bottom: 40px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 1530px;
 }
 
 .footer-top {
