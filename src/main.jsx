@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Root from './routes/Root.jsx';
 import Stories from './routes/Stories.jsx';
+import Features from './routes/Features.jsx';
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
       {
         path: "/stories",
         element: <Stories/>
-      }
+      },
+      {
+        path: "/features",
+        element: <Features/>
+      },
     ]
   },
   
