@@ -104,9 +104,7 @@ function App() {
             </div>
           </div>
         </div>
-        
-      </div>
-      <div className="footer">
+        <div className="footer">
           <div className="footer-top">
             <div className="footer-one mb50 w350">
               <img src={footer1} alt="" />
@@ -149,6 +147,7 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
     </>
   )
 }
