@@ -18,6 +18,7 @@ import yt from './assets/img/yt.svg'
 import pint from './assets/img/pint.svg'
 import ins from './assets/img/ins.svg'
 import tw from './assets/img/tw.svg'
+import hmbrg from './assets/img/hamburger.svg'
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
           </div>
           <div className="h-btn">
             <Link to={"/"}>DAVET AL</Link>
+          </div>
+          <div className="mobile">
+            <img src={hmbrg} alt="" />
           </div>
         </div>
         <div className="content">
