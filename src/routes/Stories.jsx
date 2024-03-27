@@ -8,9 +8,9 @@ import story3 from '../assets/img/three.png'
 import story4 from '../assets/img/four.png'
 import '../App.css'
 
-export default function Stories() {
+export default function Stories() { 
     return (
-        <>
+        <> 
             <div className="container">
                 <Navbar/>
                 <div className="s-content">

@@ -20,8 +20,14 @@ import ins from './assets/img/ins.svg'
 import tw from './assets/img/tw.svg'
 import hmbrg from './assets/img/hamburger.svg'
 
-
 function App() {
+
+  const [isActive, setIsActive] = useState(false)
+
+  const handleClick = () => {
+    setIsActive(!isActive)
+  }
+  const activeClas = isActive ? 'active' : 'dropdown'
 
   return (
     <>
@@ -40,9 +46,22 @@ function App() {
             <Link to={"/"}>DAVET AL</Link>
           </div>
           <div className="mobile">
-            <img src={hmbrg} alt="" />
+            <a><img src={hmbrg} alt="" onClick={handleClick}/></a>
           </div>
         </div>
+        {
+           isActive &&
+          <div className={activeClas}>
+            <ul className='mbl'>
+              <li><Link to={"/stories"} className='hover-grey'>HİKAYELER</Link></li>
+              <li><Link to={"/features"} className='hover-grey'>ÖZELLİKLER</Link></li>
+              <li><Link to={"/pricing"} className='hover-grey'>FİYATLANDIRMA</Link></li>
+            </ul>
+            <div className="h-btn block">
+              <Link to={"/"}>DAVET AL</Link>
+            </div>
+          </div>
+        }
         <div className="content">
           <div className="part-one">
             <div className="left-section pt150">
