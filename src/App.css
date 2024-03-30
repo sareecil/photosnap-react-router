@@ -219,8 +219,12 @@ hr {
   padding-top: 460px;
 }
 
+.linkhover {
+  transition: transform 0.6s ease;
+}
+
 .linkhover:hover {
-  bottom: 40px;
+  transform: translateY(-30px); /* Yukarıya doğru 10 piksel kaydırma */
 }
 
 .footer {
